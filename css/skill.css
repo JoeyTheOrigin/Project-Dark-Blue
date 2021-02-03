@@ -1,0 +1,309 @@
+:root {
+	--skillBarContainerPadding:10px;
+	--skillBarHeight:6px;
+	--skillBarMarginTop:6px;
+	--skillBarMarginBottom:20px;
+	--toolImageSize:14vw;
+	--toolImageSize768:26vw;
+	--toolMargin:1vw;
+	--toolMargin768:2vw;
+
+}
+
+#skillHeader {
+	text-align: center;
+	width: 100%;
+	font-size: 5vw;
+	margin: 6vw auto;
+}
+
+#scaleBarIndicator1 {
+	right: 45px;
+	width: 120px;
+}
+#scaleBarIndicator2 {
+	right: 22px;
+}
+#scaleBarIndicator3 {
+	right: 43px;
+}
+#scaleBarIndicator4 {
+	right: 31px;
+}
+#scaleBarIndicator5 {
+	right: 24px;
+}
+
+#scaleBarContainer {
+	width: 90%; 
+	max-width: 1000px;
+	margin: 20px auto;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+
+#scaleBarLineContainer {
+	width: calc(70% + var(--skillBarContainerPadding)*-2);
+	padding: 0px var(--skillBarContainerPadding);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.verticalLine {
+	height: 10px;
+	width: 2px;
+	background-color: black;
+}
+
+.verticalLine > p {
+	position: relative;
+	bottom: 37px;
+	font-size: 16px;
+}
+
+.flexHorizontalLine {
+	height: 2px;
+	flex-grow: 1;
+	margin:auto 0px;
+	background-color: black;
+
+}
+
+
+
+#skillContainer {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0px auto 5vw auto;
+
+	display: flex;
+	flex-flow: row-reverse wrap;
+	justify-content: flex-start;
+
+}
+
+.skillMenuContainer {
+	width: 30%;
+
+	margin: 0px;
+	background-color: #9c9c9c;
+}
+
+.skillMenu {
+	width: 100%;
+	height: 25%;
+	background-color: #e4e4e4;
+	transition: background-color 0.5s;
+	cursor: pointer;
+}
+
+.skillMenu:hover {
+	background-color: #e1e1e1;
+}
+
+.skillMenu > h3 {
+	text-align: center;
+	position: relative;
+	top:50%;
+	transform: translate(0%, -50%);
+	font-size: 3vw;
+	
+	margin: 0px;
+}
+
+.skillMenuNormalColor {
+	background-color: #cecece;
+	color: #f1f1f1;
+}
+
+.skillMenuActiveColor {
+	background-color: #f1f1f1;
+	color: black;
+}
+
+.skillMenuHoverColor {
+	background-color: #f1f1f1;
+}
+
+.skillBarContainer {
+	width: calc(70% - var(--skillBarContainerPadding)*2);
+	padding: var(--skillBarContainerPadding);
+	background-color: #f1f1f1;
+	flex-grow: 1;
+	height: 0px;
+	transition: height 1s;
+}
+
+
+
+.skillBarElement {
+	margin-bottom: 20px;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.skillBar {
+	height: var(--skillBarHeight);
+	margin-top: 6px;
+	display: block;
+}
+
+.skillBar > div {
+	background-color: #8a1717;
+	animation-name: expand;
+  	animation-duration: 0.4s;
+  	height: 100%;
+}
+
+
+.skillBarContainer > div > h1 {
+	margin: 0px;
+	font-size: 2vw;
+}
+
+.toolFlexItem {
+	width: var(--toolImageSize);
+	margin:  var(--toolMargin);
+}
+
+.toolFlexItem > img {
+	width: var(--toolImageSize);
+	height: var(--toolImageSize);
+}
+
+.toolFlexItem > h2 {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 2.6vw;
+	margin: 0px;
+}
+
+@keyframes expand {
+	from {width: 0%;}
+	to {width: 100%;}
+}
+
+@media only screen and (max-width: 768px) {
+  	
+	.skillMenu > h3 {
+		position: inherit;
+		transform: none;
+		margin: 0.5em 0px;
+	}
+
+ 	.toolFlexItem {
+		width: var(--toolImageSize768);
+		margin:  var(--toolMargin768);
+	}
+
+	.toolFlexItem > img {
+		width: var(--toolImageSize768);
+		height: var(--toolImageSize768);
+	}
+
+	.verticalLine > p {
+		font-size: 2.0833333333vw;
+	}
+
+	#scaleBarIndicator1 {
+		right: 5.859375vw;
+		width: 15.625vw;
+	}
+	#scaleBarIndicator2 {
+		right: 2.86458333vw;
+	}
+	#scaleBarIndicator3 {
+		right: 5.59895833vw;
+	}
+	#scaleBarIndicator4 {
+		right: 4.03465833vw;
+	}
+	#scaleBarIndicator5 {
+		right: 3.125vw;
+	}
+
+	.verticalLine > p {
+		bottom: 4.8177vw;
+	}
+
+	.toolFlexItem > h2 {
+		font-size: 26.88px;
+	}
+
+	.skillBarContainer > div > h1 {
+		font-size: 15.36px;
+	}
+
+	#scaleBarLineContainer {
+		width: calc(100% + var(--skillBarContainerPadding)*-2);
+	}
+
+	.skillBarContainer {
+		width: calc(100% - var(--skillBarContainerPadding)*2);
+	}
+
+	.skillMenuContainer {
+		width: 100%;
+
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.skillMenu {
+		width: auto;
+		flex-grow: 1;
+	}
+
+	#skillContainer {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+
+	#scaleBarIndicator1 {
+		right: calc(4.25*5.859375px);
+		width: calc(4.25*15.625px);
+	}
+	#scaleBarIndicator2 {
+		right: calc(4.25*2.86458333px);
+	}
+	#scaleBarIndicator3 {
+		right: calc(4.25*5.59895833px);
+	}
+	#scaleBarIndicator4 {
+		right: calc(4.25*4.03465833px);
+	}
+	#scaleBarIndicator5 {
+		right: calc(4.25*3.125px);
+	}
+
+	#skillHeader {
+		font-size: calc(4.25*6px);
+		margin: calc(4.25*6px) auto;
+	}
+
+	.skillMenu > h3 {
+		font-size: calc(4.25*3px);
+	}
+
+	.toolFlexItem {
+		width: 110.5px;
+		margin: 8.5px;
+	}
+
+	.toolFlexItem > img {
+		width: 110.5px;
+		height: 110.5px;
+	}
+
+	.verticalLine > p {
+		font-size: 8.854166666525px;
+		bottom: calc(4.25*4.8177px);
+	}
+}

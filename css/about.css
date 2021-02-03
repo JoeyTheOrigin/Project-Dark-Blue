@@ -1,0 +1,150 @@
+:root {
+	--rightContentWidth:320px;
+	--rightContentPadding: 5%;
+	--leftContentPadding: 5%;
+	--personalityPercentageWidth:60px;
+	--personalityPercentageMargin:3px;
+
+}
+
+#leftContent {
+	width: calc(100vw + var(--rightContentWidth)*-1 + var(--rightContentPadding)*-2 + var(--leftContentPadding)*-1);
+	padding-left: var(--leftContentPadding);
+
+}
+
+#leftContent > img {
+	background-color: grey;
+	width: 100%;
+}
+
+
+#rightContent {
+	height: 100%;
+	width: var(--rightContentWidth);
+	padding:0px var(--rightContentPadding);
+}
+
+#rightContent {
+	text-align: center;
+}
+
+#rightContent > h1 {
+	margin: 24px 0px 0px 0px;
+	font-size: 24px;
+}
+
+#bioParagraph > img {
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 50px
+}
+
+#bioParagraph > p {
+	text-align: center;
+	font-size: 20px;
+
+}
+
+#educationParagraph {
+	padding: 0px 40px;
+}
+
+#educationParagraph > p {
+	text-align: left;
+}
+
+#educationParagraph > p > span {
+	font-weight: 600;
+	width: 5em;
+}
+#experienceParagraph {
+	padding: 0px 40px;
+}
+
+#experienceParagraph > p {
+	text-align: left;
+	font-size: 18px;
+
+}
+
+.personalityContainer > h3 {
+	text-align: center;
+	margin: 0px auto 0px auto;
+	letter-spacing: 0.5em;
+	position: relative;
+	top: 18px;
+	font-size: 18px;
+
+}
+
+
+.personalityBar {
+	height: 6px;
+	background-color: #8a1717;
+}
+
+.leftPercentage {
+	width: var(--personalityPercentageWidth);
+	margin: 0px var(--personalityPercentageMargin);
+	text-align: right;
+	margin:0px;
+	transform: translate(0%, 50%);
+}
+
+.rightPercentage {
+	width: var(--personalityPercentageWidth);
+	margin: 0px var(--personalityPercentageMargin);
+	text-align: left;
+	margin: 0px;
+	transform: translate(0%, 50%);
+}
+
+.personalityBarContainer {
+	width: 100%;
+}
+
+.personalityBarPercentage > span {
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+.personalityBarBar {
+	width: calc(100% + var(--personalityPercentageWidth)*-2 + var(--personalityPercentageMargin)*-4);
+	margin: 0px auto;
+}
+
+.personalityBarBar .flexWhiteSpace {
+	background-color: #cccccc;
+}
+
+.personalityBarType > h3 {
+	margin: 8px 0px -10px 0px;
+	font-size: 14px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+	#rightContent {
+		width: 100%;
+
+	}
+
+	#leftContent {
+		width: 100%;
+		padding: 0px var(--leftContentPadding);
+	}
+
+	#experienceParagraph > p {
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 425px) {
+	
+}
+

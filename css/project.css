@@ -1,0 +1,139 @@
+#evaGear {
+  	font-family: 'Trebuchet MS', sans-serif;
+  	width: 100%;
+	font-size: 60px;
+	text-align: center;
+	letter-spacing: 0px;
+	transition: letter-spacing 2s;
+	margin: 42px 0px 5px 0px;
+}
+
+#evaGear:hover {
+	letter-spacing: 5px;
+
+}
+
+
+.flexContainer {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+
+.updateContainer {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+#updateTextBox {
+	width: calc(100% - 39vw);
+	padding: 3.4% 0px;
+}
+
+.updateHeader {
+	width: 30vw;
+	background-color: #101e38;
+}
+
+.updateHeader > h1 {
+	margin: 5px;
+	color: white;
+	font-size: 4.4vw;
+	letter-spacing: 0.25em;
+	text-align: center;
+	opacity: 0;
+
+}
+
+#updateTextBox > p {
+	margin: 10px 2vw;
+	position: relative;
+	top: 2.4%;
+	font-size: 2.4vw;
+}
+
+#updateTextBox > p > a {
+	color: grey;
+	font-style: italic;
+}
+
+#updateTextBox > p > a > span {
+	color:#77dcfb;
+}
+
+.updateVideo {
+	width: 39vw;
+	height: 39vw;
+}
+
+.updateVideo > video {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+#projectIntroduction {
+	margin: 0vw 4vw;
+	font-size: 2.4vw;
+}
+
+
+.reverseRow {
+	flex-flow: row-reverse wrap;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+
+	.updateVideo {
+	width: 100%;
+	height: auto;
+	}
+
+	.updateVideo > video{
+	width: inherit;
+	height: inherit;
+	}
+
+	#updateTextBox {
+		width: 100%;
+	}
+
+	#updateTextBox > p {
+		font-size: 14px;
+	}
+
+	#projectIntroduction {
+		font-size: 14px;
+	}
+
+	.updateHeader {
+		width: 178px;
+		background-color: #101e38;
+	}
+
+	.updateHeader > h1 {
+		font-size: 22px;
+	}
+
+	#evaGear:hover {
+		letter-spacing: 0px;
+
+	}
+
+	.reverseRow {
+		flex-flow: row wrap;
+	}
+
+	.updateContainer {
+		flex-flow: column-reverse wrap;
+	}
+
+
+}
