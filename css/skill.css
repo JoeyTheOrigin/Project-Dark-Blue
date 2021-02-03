@@ -3,10 +3,10 @@
 	--skillBarHeight:6px;
 	--skillBarMarginTop:6px;
 	--skillBarMarginBottom:20px;
-	--toolImageSize:14vw;
-	--toolImageSize768:26vw;
-	--toolMargin:1vw;
-	--toolMargin768:2vw;
+	--toolImageSize:10vw;
+	--toolImageSize768:20vw;
+	--toolMargin:3vw;
+	--toolMargin768:6vw;
 
 }
 
@@ -36,7 +36,7 @@
 
 #scaleBarContainer {
 	width: 90%; 
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 20px auto;
 
 	display: flex;
@@ -77,7 +77,7 @@
 
 #skillContainer {
 	width: 90%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 0px auto 5vw auto;
 
 	display: flex;
@@ -90,15 +90,15 @@
 	width: 30%;
 
 	margin: 0px;
-	background-color: #9c9c9c;
+	background-color: #cecece;
 }
 
 .skillMenu {
 	width: 100%;
-	height: 25%;
 	background-color: #e4e4e4;
 	transition: background-color 0.5s;
 	cursor: pointer;
+	margin: 0px;
 }
 
 .skillMenu:hover {
@@ -108,11 +108,11 @@
 .skillMenu > h3 {
 	text-align: center;
 	position: relative;
-	top:50%;
-	transform: translate(0%, -50%);
-	font-size: 3vw;
+	font-size: 24px;
 	
+	padding: 14px 0px;
 	margin: 0px;
+
 }
 
 .skillMenuNormalColor {
@@ -141,7 +141,7 @@
 
 
 .skillBarElement {
-	margin-bottom: 20px;
+	margin-bottom: 2.5vw;
 	opacity: 0;
 	transition: opacity 0.2s;
 }
@@ -162,7 +162,7 @@
 
 .skillBarContainer > div > h1 {
 	margin: 0px;
-	font-size: 2vw;
+	font-size: 20px;
 }
 
 .toolFlexItem {
@@ -178,7 +178,7 @@
 .toolFlexItem > h2 {
 	text-align: center;
 	font-family: sans-serif;
-	font-size: 2.6vw;
+	font-size: 26px;
 	margin: 0px;
 }
 
@@ -193,6 +193,7 @@
 		position: inherit;
 		transform: none;
 		margin: 0.5em 0px;
+		font-size: 3vw;
 	}
 
  	.toolFlexItem {
@@ -231,12 +232,9 @@
 	}
 
 	.toolFlexItem > h2 {
-		font-size: 26.88px;
+		font-size: 3.3854166667vw;
 	}
 
-	.skillBarContainer > div > h1 {
-		font-size: 15.36px;
-	}
 
 	#scaleBarLineContainer {
 		width: calc(100% + var(--skillBarContainerPadding)*-2);
@@ -300,6 +298,10 @@
 	.toolFlexItem > img {
 		width: 110.5px;
 		height: 110.5px;
+	}
+
+	.toolFlexItem > h2 {
+		font-size: 16px;
 	}
 
 	.verticalLine > p {

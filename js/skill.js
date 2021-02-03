@@ -103,16 +103,12 @@ function GetHeight(element) {
 function GetSkillContainerHeight(skillBarContainer) {
 	let padding = ExtractCssValue(getComputedStyle(document.documentElement).getPropertyValue('--skillBarContainerPadding'));
 	let screenWidth = document.documentElement.clientWidth;
-	let textHeight = 0;
-	if(screenWidth > 768) {
-		textHeight = document.documentElement.clientWidth/100*2 + 4;
-	} else {
-		textHeight = 15.36 + 2;
-	}
+	let textHeight = 23;
+	
 	let subMargin = 6;
-	let mainMargin = 20;
+	let mainMargin = 2.5*screenWidth/100;
 	let n = skillBarContainer.children.length;
-	console.log("padding:" + padding + " textHeight:" +textHeight+ " subMargin:" +subMargin+ " mainMargin:" + mainMargin + "n:" + n);
+	//console.log("padding:" + padding + " textHeight:" +textHeight+ " subMargin:" +subMargin+ " mainMargin:" + mainMargin + "n:" + n);
 	return (padding*2 + (textHeight + subMargin + mainMargin)*n) + "px";
 }
 

@@ -1,6 +1,7 @@
 :root {
 	--toolImageSize:160px;
 	--rightContentWidth:260px;
+	--rightContentPadding:1.5%;
 	--timeLineEventHeight:32px;
 	--timeLineLineWidth:6px;
 	--dotMargin:6px;
@@ -33,7 +34,7 @@
 }
 
 #leftContent {
-	width: calc(100% + var(--rightContentWidth)*-1);
+	width: calc(100% + var(--rightContentWidth)*-1 + var(--rightContentPadding)*-2);
 
 }
 
@@ -84,10 +85,14 @@
 }
 
 #rightContent {
-	height: 100%;
+	height: auto;
 	width: var(--rightContentWidth);
-	
+	padding: 0px var(--rightContentPadding);
 	background-color: #101e38;
+
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
 
 	
 }

@@ -25,24 +25,24 @@
 .updateContainer {
 	width: 100%;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
+	flex-flow: column-reverse wrap;
+	align-items: center;
 }
 
 #updateTextBox {
-	width: calc(100% - 39vw);
 	padding: 3.4% 0px;
 }
 
 .updateHeader {
-	width: 30vw;
+	width: 230.4px;
 	background-color: #101e38;
+	display: none;
 }
 
 .updateHeader > h1 {
 	margin: 5px;
 	color: white;
-	font-size: 4.4vw;
+	font-size: 33.792px;
 	letter-spacing: 0.25em;
 	text-align: center;
 	opacity: 0;
@@ -50,10 +50,10 @@
 }
 
 #updateTextBox > p {
-	margin: 10px 2vw;
+	margin: 10px calc(50% - 500px);
 	position: relative;
 	top: 2.4%;
-	font-size: 2.4vw;
+	font-size: 18.432px;
 }
 
 #updateTextBox > p > a {
@@ -66,8 +66,9 @@
 }
 
 .updateVideo {
-	width: 39vw;
-	height: 39vw;
+	width: 960px;
+	height: 544px;
+	margin: auto;
 }
 
 .updateVideo > video {
@@ -78,18 +79,95 @@
 }
 
 #projectIntroduction {
-	margin: 0vw 4vw;
-	font-size: 2.4vw;
+	margin: auto calc(50% - 500px);
+	font-size: 18.432px;
 }
 
 
 .reverseRow {
-	flex-flow: row-reverse wrap;
+	
 }
 
 
+@media only screen and (max-width: 1024px) {
+
+	#projectIntroduction {
+		margin: 30px;
+	}
+
+	.updateContainer {
+	flex-flow: row wrap;
+}
+
+	.updateHeader {
+		display: block;
+	}
+
+	#updateTextBox {
+		width: calc(100% - 300px);
+
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: start;
+
+	}
+
+	#updateTextBox > p {
+		margin: 20px 30px;
+	}
+
+	.reverseRow {
+		flex-flow: row-reverse wrap;
+	}
+
+	.updateVideo {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+
+	#evaGear {
+		font-size: 7.8125vw;
+	}
+
+	#updateTextBox {
+		width: calc(100% - 39vw);
+		padding: 3.4% 0px;
+	}
+
+	.updateHeader {
+		width: 30vw;
+	}
+
+	.updateHeader > h1 {
+		font-size: 4.4vw;
+	}
+
+	#updateTextBox > p {
+		margin: 10px 2vw;
+		font-size: 2.4vw;
+	}
+
+	.updateVideo {
+		width: 39vw;
+		height: 39vw;
+	}
+
+	#projectIntroduction {
+		margin: 0vw 4vw;
+		font-size: 2.4vw;
+	}
+
+}
 
 @media only screen and (max-width: 425px) {
+
+	#evaGear {
+		font-size: 33.203125px;
+	}
 
 	.updateVideo {
 	width: 100%;
