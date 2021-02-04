@@ -1,0 +1,254 @@
+body {
+	margin: 0px;
+}
+
+header{
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+	transform: none;
+	transition: transform 0.5s;
+}
+
+
+#headerSpace {
+	width:100%;
+	height: 66px;
+}
+
+nav {
+	width: 100%;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+h3 {
+	font-family: sans-serif;
+}
+
+
+a {
+	font-family: sans-serif;
+	color: black;
+	font-style: normal;
+	text-decoration: none;
+}
+
+p {
+	line-height: 100%;
+	font-family: sans-serif;
+}
+
+#navBarLogo {
+	width: 333px;
+	order:1;
+	background-color: #101e38;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	border-bottom: 2px solid #101e38;
+}
+
+#navBarMenusContainer {
+	padding: 10px 0px;
+	order: 2;
+	background-color: white;
+	border-bottom: 2px solid #101e38;
+
+	
+	flex-grow: 1;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+
+}
+
+
+.flexCollaspWhiteSpace {
+	flex-grow: 1;
+}
+
+.flexWhiteSpace {
+	flex-grow: 1;
+}
+
+.flexContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+
+
+.navBarMenu {
+	margin: auto 0px;
+	width: 80px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+
+	font-size: 20px;
+	letter-spacing: 0px;
+	font-style: normal;
+	font-weight: 400;
+	transition: letter-spacing 0.333s;
+
+}
+
+
+.navBarMenu:hover {
+	letter-spacing: 0.1em;
+}
+
+
+
+.hide {
+	display: none;
+
+}
+
+
+content {
+	/*background-color: grey;*/
+	width: 100%;
+	flex-grow: 1;
+	height: auto;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+
+}
+
+footer {
+	width: 100%;
+	padding: 5px 0px;
+	margin-top: 64px; 
+
+	background-color: #101e38;
+	color: white;
+	text-align: center;
+
+/*
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+*/
+}
+
+footer > h1 {
+	margin: 5px 0px;
+	font-size: 32px;
+	position: relative;
+	top: 8px;
+	letter-spacing: 2px;
+}
+
+footer > p {
+	font-size: 16px;
+	position: relative;
+	margin-top: 0px;
+	line-height: 1.3em;
+
+}
+
+.contactMediaLogo {
+	width: 40px;
+	height: 40px;
+} 
+
+footer > div > a {
+	margin: auto 10px;
+	width: 40px;
+	height: 40px;
+}
+
+footer > div > div > p {
+	text-align: left;
+}
+
+
+/* animation stuff
+*/
+
+.transformLeftToRight {
+	animation-name: transformLeftToRight;
+	animation-duration: 1s;
+}
+
+.transformRightToLeft {
+	animation-name: transformRightToLeft;
+	animation-duration: 1s;
+}
+
+.transformR2L768L2R {
+	animation-name: transformRightToLeft;
+	animation-duration: 1s;
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes transformLeftToRight {
+  from {transform: translate(-100%, 0%)}
+  to {transform: translate(0%, 0%)}
+}
+
+@keyframes transformRightToLeft {
+  from {transform: translate(100%, 0%)}
+  to {transform: translate(0%, 0%)}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+/* @media
+*/
+@media only screen and (max-width: 768px) {
+
+	.flexCollaspWhiteSpace {
+		flex-grow: 0;
+	}
+
+  	#navBarLogo {
+  		width: 100%;
+  		height: auto;
+  		letter-spacing: 0.2em;
+
+  	}
+  	#headerSpace {
+  		height: 115px;
+  	}
+}
+
+@media only screen and (max-width: 425px) {
+
+  	body {
+  		width: 425px;
+  	}
+
+
+
+  	.transformR2L768L2R {
+		animation-name: transformLeftToRight;
+		animation-duration: 1s;
+	}
+
+}
+
+
+

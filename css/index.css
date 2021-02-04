@@ -1,0 +1,240 @@
+:root {
+	--toolImageSize:160px;
+	--rightContentWidth:260px;
+	--rightContentPadding:1.5%;
+	--timeLineEventHeight:32px;
+	--timeLineLineWidth:6px;
+	--dotMargin:6px;
+}
+
+#showCase {
+	position: relative;
+	height: 30vw;
+	width: 100%;
+	margin-bottom: 32px;
+}
+
+
+
+#showCaseCover {
+	float: left;
+	position: absolute;
+
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+}
+
+#showCaseVideo {
+	position: absolute;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+#leftContent {
+	width: calc(100% + var(--rightContentWidth)*-1 + var(--rightContentPadding)*-2);
+
+}
+
+.flexHorizontalLine {
+	flex-grow: 1;
+	height: 2px;
+	margin: auto 0.5em;
+	background-color: #8a1717;
+
+}
+
+
+.contentContainer {
+	margin: 0px auto;
+	width: 100%;
+	background-color: white;
+}
+
+.contentHeader{ 
+	margin: 20px 5% 0px 5%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.contentHeaderText {
+	background-color: white;
+	color: black;
+
+}
+
+.contentHeaderText > h1 {
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin: 0px;
+	color: #8a1717;
+}
+
+.contentParagraph {
+	margin: 0px 20px;
+
+}
+
+.contentParagraph > p {
+	font-size: 18px;
+	text-align: center;
+}
+
+#rightContent {
+	height: auto;
+	width: var(--rightContentWidth);
+	padding: 0px var(--rightContentPadding);
+	background-color: #101e38;
+
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+
+	
+}
+
+#rightContent div > h2 {
+	margin: 1em auto 0.1em 0.5em;
+	font-family: sans-serif;
+	font-size: 26px;
+	color: white;
+}
+
+#rightContent div > h3 {
+	margin: 0em auto 0.2em 1.3em;
+	font-family: sans-serif;
+	font-size: 20px;
+	color:white;
+}
+
+#rightContent div > p {
+	margin: 0.1em auto 1em 2em;
+	font-family: sans-serif;
+	font-size: 18px;
+	color: white;
+	width: 11em;
+}
+
+#rightContent div > p > span {
+
+	font-size: 18px;
+	color: gold;
+}
+
+#skillHeader {
+	width: 100%;
+	text-align: center;
+	margin-top: 70px;
+	font-size: 36px;
+}
+
+.toolFlexItem {
+	width: var(--toolImageSize);
+	margin:  10px;
+}
+
+.toolFlexItem > img {
+	width: var(--toolImageSize);
+	height: var(--toolImageSize);
+}
+
+.toolFlexItem > h2 {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 24px;
+	margin: 0px;
+}
+
+
+
+#showCaseTitle {
+	margin: auto;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#showCaseTitle > span {
+	font-size: 18px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#showCaseTitle > span > a {
+	color: #9de8ff;
+	font-style: italic;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  	.contentContainer {
+  		width: 96%;
+  	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	#showCaseTitle {
+		font-size: 5vw;
+	}
+
+	#rightContent {
+		width: 100%;
+
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	#leftContent {
+		width: 100%;
+	}
+
+	#showCase {
+
+		height: 43vw;
+
+	}
+}
+
+@media only screen and (max-width: 532px) {
+	#rightContent div > p {
+		font-size: 3.3834586466vw;
+		margin: 0.1em auto 1em 6.7669172932vw;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#showCase {
+
+		height: 182px;
+		width: 425px;
+
+	}
+	#showCaseTitle {
+		font-size: 21.25px;
+	}
+
+	#showCaseCover {
+		width: 100%;
+	}
+
+	#showCaseVideo {
+		width: 425px;
+	}
+
+	#rightContent div > p {
+		font-size: 14.3796992481px;
+		margin: 0.1em auto 1em 28.7593984962px;
+	}
+}
+

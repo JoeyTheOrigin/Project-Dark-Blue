@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- work like a charm -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/project.css">
+	<title>Project</title>
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div id = "navBarLogo">
+				<h1>UDOM CHAOWANAKOSOL</h1>
+			</div>
+			<div id = "navBarMenusContainer">
+				<div class = "flexWhiteSpace"></div>
+				<div class = "navBarMenu"><a href="index.html"> HOME </a></div>
+				<div class = "flexWhiteSpace"></div>
+				<div class = "navBarMenu"><a style="color: #8a1717; font-weight: bold;"> PROJECT </a></div>
+				<div class = "flexWhiteSpace"></div>
+				<div class = "navBarMenu"><a href="skill.html"> SKILLS </a></div>
+				<div class = "flexWhiteSpace"></div>
+				<div class = "navBarMenu"><a href="about.html"> ABOUT </a></div>
+				<div class = "flexWhiteSpace"></div>
+			</div>		
+		</nav>
+	</header>
+
+	<div id = "headerSpace"></div>
+	
+	<content>
+		<h2 id = "evaGear">E.V.A. GEAR</h2>
+
+		<div id="projectIntroduction">
+			<p>This project was started in late 2018 as a hobby. It was aimed to be a real robot 3rd person action game on PC with the anime art style. It was inspired by many games and animes such as Gundam, Ace Combat, Metal Slug and Front Mission. Because of the art style and budget, Unity and Blender 3D were the suitable choice for this project also it is a good opportunity to learn Unity's HDRP(High Definition Render Pipe Line) and 3d modelling at the same time.
+			</p>
+		</div>
+
+		<div style="height:64px; width: 100%;"></div>
+
+		<div class= "updateContainer">
+
+			<div id="updateTextBox">
+				<div class="flexContainer">
+					<div class="updateHeader" id="phase1"><h1>PHASE 1</h1></div>
+					<div class = "flexWhiteSpace"></div>
+				</div>
+				<p>This is the very first phase of the project. The primary objective of this phase is essential functions such as movement, animation, target lock-on, HUD, post-processing effect, etc. The biggest success in this phase is accurate targeting system combine with 3-joints inverse kinematic system that can achieve nearly pinpoint accuracy. (for simple linear movement target)   <a href="https://www.youtube.com/watch?v=LkVm20Nl0jc&t=2s" target="_blank">full video link <span>here...</span></a></p>
+			</div>
+			<div class="updateVideo"><video style="animation-delay: 0s" autoplay muted loop><source src="video/phase 1.mp4" type="video/mp4"></video></div>
+	
+		</div>
+
+		<div style="height:64px; width: 100%;"></div>
+
+		<div class= "reverseRow updateContainer">
+			
+			<div id="updateTextBox">
+				<div class="reverseRow flexContainer">
+					<div class="updateHeader" id="phase2"><h1>PHASE 2</h1></div> 
+					<div class = "flexWhiteSpace"></div>
+				</div>
+				<p>The second phase is about the character's model and environment. Unity's shader graph is used to make the shader for coconut's leaves and wave ripples. the sea wave is the combination of 2 sine waves with different direction, wavelength and amplitude. The coconut's leaves are animated by gradient noise weighted with vertex position and the trees were planted by code with random deviation in position, rotation, and scale. <a href="https://www.youtube.com/watch?v=01ydbB2F2CI" target="_blank">full video link <span>here...</span></a></p>
+			</div>
+			<div class="updateVideo"><video style="animation-delay: 0s" autoplay muted loop><source src="video/phase 2.mp4" type="video/mp4"></video></div>
+		</div>
+
+	</content>
+
+	<div style="height:64px; width: 100%;"></div>
+	<script type="text/javascript" ></script>
+
+	<footer>
+		<h1>GET IN TOUCH</h1>
+
+		
+		<div class="flexContainer" style="justify-content: center;">
+			<a href="https://www.facebook.com/joey.the.origin" target="_blank"><img src="images/facebook.png" class="contactMediaLogo"></a>
+			<a href="images/line QR.jpg" target="_blank"><img src="images/line.png" class="contactMediaLogo"></a>
+			<div>
+				<p>email: joey.the.origin@gmail.com</p>
+				<p>tel: 099-415-7770</p>
+			</div>
+		</div>
+
+		<p>8, 8 Ngam Wong Wan 43 Alley, Lane 2-8, Thung Song Hong, Lak Si, Bangkok 10210</p> 
+	</footer>
+
+
+	<script src="js/script.js"></script>
+	<script src="js/project.js"></script>
+</body>
+</html>
